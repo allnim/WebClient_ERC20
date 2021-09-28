@@ -48,7 +48,7 @@ export default () => {
                         <Icon name='attention notched' />
                         <Message.Content>
                             <Message.Header><b>Before You Start</b></Message.Header>
-                            CopyrightShares is (presently) live on the Ethereum Ropsten test network. Please use a Web3 compatible browser like Opera, or a Web3 extension like MetaMask. Registration a copyright using CopyrightShares will create a valid legal entity.  PLEASE READ OUR <Link to="/terms">TERMS OF USE</Link>.
+                            CopyrightShares is (presently) live on the Ethereum Ropsten test-network. Please use a Web3 compatible browser like Opera, or a Web3 extension like MetaMask. Registration a copyright using CopyrightShares will create a valid legal entity.  PLEASE READ OUR <Link to="/terms">TERMS OF USE</Link>.
                         </Message.Content>
                     </Message>
                 </div>
