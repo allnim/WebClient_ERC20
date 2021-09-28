@@ -1,12 +1,11 @@
 // React
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
-import { useHistory, Link } from "react-router-dom";
+import {useMappedState} from 'redux-react-hook';
+import {Link, useHistory} from "react-router-dom";
 
 // Components
-import Logo from '../../Logo'
 import Step_ActivateCompany from './ActivateCompany'
 import Step_ConnectWallet from './ConnectWallet'
 import Step_CheckName from './CheckName'
@@ -43,13 +42,13 @@ export default () => {
             <Loader active={loading} style={{zIndex: 0}} />
             <div style={{display: (typeof currentStep === 'string' ? "none" : "")}}>
                 <div style={{textAlign: "left", marginBottom: "30px"}}>
-                    <h1 className="title">Welcome to OtoCo</h1>
-                    <p className="subtitle">Instantly spin up your real-world LLC here.</p>
+                    <h1 className="title">Welcome to CopyrightShares</h1>
+                    <p className="subtitle">Instantly register a copyright, upload an image, a song and start receiving royalties.</p>
                     <Message icon style={{ backgroundColor: "transparent", border: "1px solid #eee", lineHeight: "25px" }}>
                         <Icon name='attention notched' />
                         <Message.Content>
                             <Message.Header><b>Before You Start</b></Message.Header>
-                            OtoCo is live on the Ethereum Mainnet. Please use a Web3 compatible browser like Opera, or a Web3 extension like MetaMask. Activating a company using OtoCo will create a valid legal entity.  PLEASE READ OUR <Link to="/terms">TERMS OF USE</Link>.
+                            CopyrightShares is (presently) live on the Ethereum Ropsten test network. Please use a Web3 compatible browser like Opera, or a Web3 extension like MetaMask. Registration a copyright using CopyrightShares will create a valid legal entity.  PLEASE READ OUR <Link to="/terms">TERMS OF USE</Link>.
                         </Message.Content>
                     </Message>
                 </div>

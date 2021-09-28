@@ -1,9 +1,8 @@
 import React from 'react'
 
 // Semantic UI for React
-import Button from 'semantic-ui-react/dist/commonjs/elements/Button'
 import Container from 'semantic-ui-react/dist/commonjs/elements/Container'
-import { useHistory, Link } from "react-router-dom";
+import {Link, useHistory} from "react-router-dom";
 
 export default () => {
 
@@ -17,7 +16,7 @@ export default () => {
         <Container className="pnl-body">
             <div className="terms" style={{textAlign: "left", marginBottom: "100px"}}>
                 <h1 className="title">TERMS OF USE</h1>
-                <span className="c12">Welcome to OtoCo! Please read these Terms of Use (the “Agreement” or “Terms”) carefully, along with any other policies or notices and our Privacy Policy (defined below) located at&nbsp;</span><span className="c5"><Link to="/privacy">Privacy</Link></span><span className="c12">, as they lay out the rules, terms, and guidelines for you to follow when using and accessing our website&nbsp;</span><span className="c5"><a className="c8" href="">otoco.io</a></span>
+                <span className="c12">Welcome to CopyrightShares! Please read these Terms of Use (the “Agreement” or “Terms”) carefully, along with any other policies or notices and our Privacy Policy (defined below) located at&nbsp;</span><span className="c5"><Link to="/privacy">Privacy</Link></span><span className="c12">, as they lay out the rules, terms, and guidelines for you to follow when using and accessing our website&nbsp;</span><span className="c5"><a className="c8" href="">otoco.io</a></span>
                 <span className="c4">&nbsp;(“OtoCo” or the “Site”) (collectively, the “Services”). This Agreement governs your use of OtoCo and constitutes a legally binding agreement between each user (“you,” “your,” or “User”) and Otonomos LLC (“we,” “us,” or “our”).
                 </span>
                 <p className="c0"><span className="c4">By using OtoCo, you agree to follow and be bound by these Terms and agree to comply with all applicable local, state, and federal laws and regulations. If you do not agree to the terms of this Agreement, do not access OtoCo.</span></p>

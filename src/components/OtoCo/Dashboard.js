@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
-import { useHistory } from "react-router-dom";
+import {useDispatch, useMappedState} from 'redux-react-hook';
+import {useHistory} from "react-router-dom";
 
 // Semantic UI for React
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button'
@@ -105,7 +105,7 @@ export default () => {
         <Container className="pnl-body">
             <div style={{textAlign: "left", marginBottom: "100px"}}>
                 <h1 className="title">Dashboard</h1>
-                <p className="subtitle">Manage your on-chain companies</p>
+                <p className="subtitle">Manage your on-chain Copyrights</p>
                 <p></p>
                 <table className="ui celled table" style={{ display: (ownSeriesContracts.length > 0) ? "" : "none"}}>
                     <thead>
@@ -122,8 +122,8 @@ export default () => {
                         <List contracts={ownSeriesContracts} selected={manageSeries.contract}></List>
                     </tbody>
                 </table>
-                <div className="ui active centered inline text loader" style={{ display: (loading) ? "" : "none", zIndex : 0 }}>Loading Companies</div>
-                <Button id="btn-check-nmae" className="ui right floated button primary" type="submit" onClick={clickBackHandler}>Set up a new company</Button>
+                <div className="ui active centered inline text loader" style={{ display: (loading) ? "" : "none", zIndex : 0 }}>Loading Copyrights</div>
+                <Button id="btn-check-nmae" className="ui right floated button primary" type="submit" onClick={clickBackHandler}>Register a new Copyright</Button>
             </div>
         </Container>
     )

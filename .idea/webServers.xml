@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="04d9683e-e9a0-4dfe-85d2-e1e43cad365e" name="creg" url="http://creg.copyrightshares.com">
+        <fileTransfer rootFolder="/home/thorarne/webapps/creg" accessType="SFTP" host="95.179.159.219" port="22" sshConfigId="8a758c66-9dd9-4079-9007-14f1e327e4a6" sshConfig="root@95.179.159.219:22 password">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

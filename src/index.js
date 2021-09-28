@@ -33,8 +33,8 @@ ReactDOM.render(
     </div>
     <AccountDetails />
     <div className='footer'>
-      <a href="http://otoco.otonomos.com" target="blank">Documentation and FAQs</a><br/>
-      ©️ 2020 Otonomos Blockchain Technologies Ltd.
+      <a href="http://copyrightFlow.us" target="blank">Documentation and FAQs</a><br/>
+      ©️ 2021 Copyright Flow llc.
       </div>
   </StoreContext.Provider>,
   document.getElementById('app')
