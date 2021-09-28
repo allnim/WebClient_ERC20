@@ -1,17 +1,14 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 import ENS from 'ethereum-ens';
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
+import {useDispatch, useMappedState} from 'redux-react-hook';
 
 import OtocoRegistrar from '../../SmartContracts/OtocoRegistrar'
-import ENSRegistrar from '../../SmartContracts/ENSRegistrarController'
 
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button'
 import Label from 'semantic-ui-react/dist/commonjs/elements/Label'
 import Input from 'semantic-ui-react/dist/commonjs/elements/Input'
-import Progress from 'semantic-ui-react/dist/commonjs/modules/Progress'
-import Dropdown from 'semantic-ui-react/dist/commonjs/modules/Dropdown'
 import Message from 'semantic-ui-react/dist/commonjs/collections/Message'
 import Address from '../../UIComponents/Address';
 import Transaction from '../../UIComponents/Transaction';
@@ -91,7 +88,7 @@ export default () => {
 
     return (
         <div>
-            <h4 style={{paddingTop: '30px'}}>Link your company address <Address address={manageSeries.contract}></Address> to an otoco.eth to make it easy to use. Simply check availability and claim your domain for free.</h4>
+            <h4 style={{paddingTop: '30px'}}>Link your CopyrightID's address <Address address={manageSeries.contract}></Address> to an copyrightshares.eth to make it easy to use. Simply check availability and claim your alias.</h4>
             {(status != 'claiming') && <Input 
                 type='text' 
                 className="checkname-input-container" 

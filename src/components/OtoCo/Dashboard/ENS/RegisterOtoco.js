@@ -1,20 +1,13 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 import ENS from 'ethereum-ens';
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
+import {useDispatch, useMappedState} from 'redux-react-hook';
 
-import Registrar from '../../SmartContracts/OtocoRegistrar'
-import ENSRegistrar from '../../SmartContracts/ENSRegistrarController'
+import OtocoRegistrar from '../../SmartContracts/OtocoRegistrar'
 import Address from '../../UIComponents/Address'
 
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button'
-import Label from 'semantic-ui-react/dist/commonjs/elements/Label'
-import Input from 'semantic-ui-react/dist/commonjs/elements/Input'
-import Progress from 'semantic-ui-react/dist/commonjs/modules/Progress'
-import Dropdown from 'semantic-ui-react/dist/commonjs/modules/Dropdown'
-import Message from 'semantic-ui-react/dist/commonjs/collections/Message'
-import OtocoRegistrar from '../../SmartContracts/OtocoRegistrar';
 import Transaction from '../../UIComponents/Transaction';
 
 export default () => {
@@ -61,12 +54,12 @@ export default () => {
     return (
         <div>
             <h4 style={{paddingTop: '30px'}}>
-                {manageEns.name}.{manageEns.selectedDomain} will be registered on behalf of the company manager <Address address={currentAccount}></Address>
-                , and the domain will point to the company contract address <Address address={manageSeries.contract}></Address>
+                {manageEns.name}.{manageEns.selectedDomain} will be registered on behalf of the Copyrights manager <Address address={currentAccount}></Address>
+                , and the domain will point to the CopyrightID's contract address <Address address={manageSeries.contract}></Address>
             </h4>
             {transaction && <Transaction hash={transaction} title="Register Subdomain" callback={registeringFinished}></Transaction>}
             {!transaction && !success && <Button id="btn-check-nmae" className="primary" type="submit" onClick={handlerClickSend}>Send Request</Button>}
-            {success && <p>Your domain was successfully registered! Click 'back' and verify the domain.</p>}
+            {success && <p>Your domain "alias" was successfully registered! Click 'back' and verify the domain.</p>}
             {success && 
                 <Button id="btn-check-nmae" className="primary" type="submit" onClick={handlerClickBack}>Back to Verification</Button>
             }

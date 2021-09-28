@@ -1,7 +1,6 @@
-import React, { useState } from 'react'
-import ENS from 'ethereum-ens';
+import React, {useState} from 'react'
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
+import {useDispatch, useMappedState} from 'redux-react-hook';
 
 // Semantic UI for React
 import Input from 'semantic-ui-react/dist/commonjs/elements/Input'
@@ -57,8 +56,8 @@ export default () => {
 
     return (
         <div>
-            <h4 style={{paddingTop: '30px'}}>We made it easy for your new company to issue ERC20 tokens.</h4>
-            <p>You decide what the tokens represent: equity in your company, a usage right, a convertible, etc. Simply set you token parameters and click 'Next' to create the new contract.</p>
+            <h4 style={{paddingTop: '30px'}}>We made it easy for you to issue CopyrightShares</h4>
+            <p>You decide what the tokens represent: royalties in the Copyright, an investment for temporary holding of CopyrightShares, etc. Simply set you CopyrightShares parameters and click 'Next' to create the new CopyrightShares.</p>
             <Input 
                 type='text' 
                 className="token-input-container" 
@@ -70,7 +69,7 @@ export default () => {
                 style={{width: '50%', marginRight:"5%"}}
             >
                 <input className="placeholder" />
-                <Label basic>Token Name</Label>
+                <Label basic>CopyrightShares Name</Label>
             </Input>
             <Input 
                 type='text' 
@@ -83,7 +82,7 @@ export default () => {
                 style={{width: '50%', marginRight:"5%"}}
             >
                 <input className="placeholder" />
-                <Label basic>Token Symbol</Label>
+                <Label basic>CopyrightShares Symbol</Label>
             </Input>
             <Input 
                 type='text' 
@@ -97,7 +96,7 @@ export default () => {
                 style={{width: '50%'}}
             >
                 <input className="placeholder" />
-                <Label basic>Total Shares</Label>
+                <Label basic>Total CopyrightShares</Label>
             </Input>
             {error && <Message className="negative" style={{width: '50%'}}>
                 <p>{error}</p>

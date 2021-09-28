@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
-import { useHistory } from "react-router-dom";
+import {useDispatch, useMappedState} from 'redux-react-hook';
+import {useHistory} from "react-router-dom";
 
 import Address from '../../UIComponents/Address'
 import UTCDate from '../../UIComponents/UTCDate'
@@ -85,7 +85,7 @@ export default () => {
                 <div className="ui text loader">Loading</div>
             </div>
             {manageShares.creation && <h4>
-                A total of {manageShares.shares} {manageShares.name} with symbol {manageShares.symbol} were minted on <UTCDate separator="at" date={manageShares.creation}></UTCDate>.
+                A total of {manageShares.shares} {manageShares.name} with symbol {manageShares.symbol} were issued on <UTCDate separator="at" date={manageShares.creation}></UTCDate>.
             </h4>}
             <p>{manageShares.symbol} token address: <Address address={manageShares.contract}></Address></p>
             <p>List of current holders:</p>
@@ -101,8 +101,8 @@ export default () => {
                     <ListOwners/>
                 </tbody>
             </table>
-            <Button className="primary" onClick={clickTransferHandler}>Transfer Tokens</Button>
-            <Button className="primary" onClick={clickCopyHandler.bind(undefined, manageShares.contract)}>View token on Etherscan</Button>
+            <Button className="primary" onClick={clickTransferHandler}>Transfer CopyrightShares</Button>
+            <Button className="primary" onClick={clickCopyHandler.bind(undefined, manageShares.contract)}>View the CopyrightShares on Etherscan</Button>
             <p style={{margin: '80px'}}></p>
         </div>
     )

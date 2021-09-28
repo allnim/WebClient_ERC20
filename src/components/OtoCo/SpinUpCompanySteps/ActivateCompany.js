@@ -2,8 +2,8 @@
 import React from 'react';
 
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
-import { useHistory } from "react-router-dom";
+import {useDispatch, useMappedState} from 'redux-react-hook';
+import {useHistory} from "react-router-dom";
 
 // Semantic UI for React
 import Button from 'semantic-ui-react/dist/commonjs/elements/Button'
@@ -65,7 +65,7 @@ export default () => {
     return (
         <div>
             <div style={{minHeight: '200px'}}>
-            <p className="normal-text">The current deployment cost is approximately. <b>{totalCost} ETH</b>.</p>
+            <p className="normal-text">The current deployment cost is approximately. <b>{totalCost} CTIM</b>.</p>
             <p className="normal-text">Click `<b>Activate</b>` to spin up `<b>{availableName}</b>` in <b>{jurisdictionName}</b>.</p>
             {/* <p className="normal-text">( Your Current {erc20Symbol} Balance: <b>{accountBalanceERC20} {erc20Symbol}</b> )</p> */}
             </div>

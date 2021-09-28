@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import React, {useState} from 'react'
 import axios from 'axios';
 // Redux Hook
-import {useMappedState,useDispatch} from 'redux-react-hook';
+import {useDispatch, useMappedState} from 'redux-react-hook';
 
 import Transaction from '../../UIComponents/Transaction'
 import FactoryContract from '../../SmartContracts/TokenFactory'
@@ -62,7 +62,7 @@ export default () => {
 
     return (
         <div>
-            <h4 style={{paddingTop: '30px'}}>A new token named {manageShares.name}, with the symbol {manageShares.symbol} and a total supply of {manageShares.shares} will be deployed.</h4>
+            <h4 style={{paddingTop: '30px'}}>New CopyrightShares named {manageShares.name}, with the symbol {manageShares.symbol} and a total supply of {manageShares.shares} will be deployed.</h4>
             <Form></Form>
         </div>
     )

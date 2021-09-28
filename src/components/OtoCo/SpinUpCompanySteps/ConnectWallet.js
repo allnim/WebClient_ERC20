@@ -44,7 +44,7 @@ export default ({setStepNum}) => {
 
     return (
         <div>
-            <p>Connect a wallet that will own your company.</p>
+            <p>Connect a wallet that will hold your Copyright.</p>
             <Button  className="primary" onClick={clickConnectkHandler}>Connect Wallet</Button>
         </div>
     );
